@@ -1,0 +1,35 @@
+2023-10-30 20:58:49,102 INFO    Thread-9 (_run_job):190885 [wandb_setup.py:_flush():76] Current SDK version is 0.15.12
+2023-10-30 20:58:49,102 INFO    Thread-9 (_run_job):190885 [wandb_setup.py:_flush():76] Configure stats pid to 190885
+2023-10-30 20:58:49,102 INFO    Thread-9 (_run_job):190885 [wandb_setup.py:_flush():76] Loading settings from /home/henry/.config/wandb/settings
+2023-10-30 20:58:49,102 INFO    Thread-9 (_run_job):190885 [wandb_setup.py:_flush():76] Loading settings from /home/henry/Documents/BCI/wandb/settings
+2023-10-30 20:58:49,102 INFO    Thread-9 (_run_job):190885 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'Directions_BCI', 'entity': 'henrybass', 'root_dir': '/home/henry/Documents/BCI', 'run_id': '2rhqyz61', 'sweep_param_path': '/home/henry/Documents/BCI/wandb/sweep-yrz7a40c/config-2rhqyz61.yaml', 'sweep_id': 'yrz7a40c'}
+2023-10-30 20:58:49,102 INFO    Thread-9 (_run_job):190885 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-10-30 20:58:49,102 INFO    Thread-9 (_run_job):190885 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'training.py', 'program_abspath': '/home/henry/Documents/BCI/training.py', 'program': '/home/henry/Documents/BCI/training.py'}
+2023-10-30 20:58:49,102 INFO    Thread-9 (_run_job):190885 [wandb_init.py:_log_setup():528] Logging user logs to /home/henry/Documents/BCI/wandb/run-20231030_205849-2rhqyz61/logs/debug.log
+2023-10-30 20:58:49,102 INFO    Thread-9 (_run_job):190885 [wandb_init.py:_log_setup():529] Logging internal logs to /home/henry/Documents/BCI/wandb/run-20231030_205849-2rhqyz61/logs/debug-internal.log
+2023-10-30 20:58:49,102 INFO    Thread-9 (_run_job):190885 [wandb_init.py:init():568] calling init triggers
+2023-10-30 20:58:49,102 INFO    Thread-9 (_run_job):190885 [wandb_init.py:init():575] wandb.init called with sweep_config: {'a': 8, 'b': 512, 'c': 32}
+config: {}
+2023-10-30 20:58:49,102 INFO    Thread-9 (_run_job):190885 [wandb_init.py:init():618] starting backend
+2023-10-30 20:58:49,102 INFO    Thread-9 (_run_job):190885 [wandb_init.py:init():622] setting up manager
+2023-10-30 20:58:49,107 INFO    Thread-9 (_run_job):190885 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-10-30 20:58:49,107 INFO    Thread-9 (_run_job):190885 [wandb_init.py:init():628] backend started and connected
+2023-10-30 20:58:49,112 INFO    Thread-9 (_run_job):190885 [wandb_run.py:_config_callback():1324] config_cb None None {'a': 8, 'b': 512, 'c': 32}
+2023-10-30 20:58:49,114 INFO    Thread-9 (_run_job):190885 [wandb_init.py:init():720] updated telemetry
+2023-10-30 20:58:49,119 INFO    Thread-9 (_run_job):190885 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2023-10-30 20:58:49,371 INFO    Thread-9 (_run_job):190885 [wandb_run.py:_on_init():2220] communicating current version
+2023-10-30 20:58:49,449 INFO    Thread-9 (_run_job):190885 [wandb_run.py:_on_init():2229] got version response 
+2023-10-30 20:58:49,449 INFO    Thread-9 (_run_job):190885 [wandb_init.py:init():804] starting run threads in backend
+2023-10-30 20:58:49,561 INFO    Thread-9 (_run_job):190885 [wandb_run.py:_console_start():2199] atexit reg
+2023-10-30 20:58:49,562 INFO    Thread-9 (_run_job):190885 [wandb_run.py:_redirect():2054] redirect: wrap_raw
+2023-10-30 20:58:49,562 INFO    Thread-9 (_run_job):190885 [wandb_run.py:_redirect():2119] Wrapping output streams.
+2023-10-30 20:58:49,562 INFO    Thread-9 (_run_job):190885 [wandb_run.py:_redirect():2144] Redirects installed.
+2023-10-30 20:58:49,562 INFO    Thread-9 (_run_job):190885 [wandb_init.py:init():845] run started, returning control to user process
+2023-10-30 20:58:49,562 INFO    Thread-9 (_run_job):190885 [wandb_run.py:_config_callback():1324] config_cb None None {'epochs': 1, 'batch_size': 32, 'out_layers': [8, 512, 32], 'out_layers_activation': 'relu', 'conv_activation': 'relu', 'noise': 0}
+2023-10-30 20:59:42,864 INFO    Thread-9 (_run_job):190885 [wandb_run.py:_finish():1934] finishing run henrybass/Directions_BCI/2rhqyz61
+2023-10-30 20:59:42,865 INFO    Thread-9 (_run_job):190885 [wandb_run.py:_atexit_cleanup():2168] got exitcode: 0
+2023-10-30 20:59:42,866 INFO    Thread-9 (_run_job):190885 [wandb_run.py:_restore():2151] restore
+2023-10-30 20:59:42,867 INFO    Thread-9 (_run_job):190885 [wandb_run.py:_restore():2157] restore done
+2023-10-30 20:59:46,299 INFO    Thread-9 (_run_job):190885 [wandb_run.py:_footer_history_summary_info():3599] rendering history
+2023-10-30 20:59:46,299 INFO    Thread-9 (_run_job):190885 [wandb_run.py:_footer_history_summary_info():3631] rendering summary
+2023-10-30 20:59:46,302 INFO    Thread-9 (_run_job):190885 [wandb_run.py:_footer_sync_info():3558] logging synced files

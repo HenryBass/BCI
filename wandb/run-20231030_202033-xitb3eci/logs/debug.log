@@ -1,0 +1,34 @@
+2023-10-30 20:20:33,793 INFO    Thread-2 (_run_job):176652 [wandb_setup.py:_flush():76] Current SDK version is 0.15.12
+2023-10-30 20:20:33,794 INFO    Thread-2 (_run_job):176652 [wandb_setup.py:_flush():76] Configure stats pid to 176652
+2023-10-30 20:20:33,794 INFO    Thread-2 (_run_job):176652 [wandb_setup.py:_flush():76] Loading settings from /home/henry/.config/wandb/settings
+2023-10-30 20:20:33,794 INFO    Thread-2 (_run_job):176652 [wandb_setup.py:_flush():76] Loading settings from /home/henry/Documents/BCI/wandb/settings
+2023-10-30 20:20:33,794 INFO    Thread-2 (_run_job):176652 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'Directions_BCI', 'entity': 'henrybass', 'root_dir': '/home/henry/Documents/BCI', 'sweep_id': 'adjgh2kt', 'run_id': 'xitb3eci', 'sweep_param_path': '/home/henry/Documents/BCI/wandb/sweep-adjgh2kt/config-xitb3eci.yaml'}
+2023-10-30 20:20:33,794 INFO    Thread-2 (_run_job):176652 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-10-30 20:20:33,794 INFO    Thread-2 (_run_job):176652 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'training.py', 'program_abspath': '/home/henry/Documents/BCI/training.py', 'program': '/home/henry/Documents/BCI/training.py'}
+2023-10-30 20:20:33,794 INFO    Thread-2 (_run_job):176652 [wandb_init.py:_log_setup():528] Logging user logs to /home/henry/Documents/BCI/wandb/run-20231030_202033-xitb3eci/logs/debug.log
+2023-10-30 20:20:33,794 INFO    Thread-2 (_run_job):176652 [wandb_init.py:_log_setup():529] Logging internal logs to /home/henry/Documents/BCI/wandb/run-20231030_202033-xitb3eci/logs/debug-internal.log
+2023-10-30 20:20:33,794 INFO    Thread-2 (_run_job):176652 [wandb_init.py:init():568] calling init triggers
+2023-10-30 20:20:33,794 INFO    Thread-2 (_run_job):176652 [wandb_init.py:init():575] wandb.init called with sweep_config: {'a': 8, 'b': 16, 'c': 256}
+config: {}
+2023-10-30 20:20:33,794 INFO    Thread-2 (_run_job):176652 [wandb_init.py:init():618] starting backend
+2023-10-30 20:20:33,794 INFO    Thread-2 (_run_job):176652 [wandb_init.py:init():622] setting up manager
+2023-10-30 20:20:33,799 INFO    Thread-2 (_run_job):176652 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-10-30 20:20:33,799 INFO    Thread-2 (_run_job):176652 [wandb_init.py:init():628] backend started and connected
+2023-10-30 20:20:33,803 INFO    Thread-2 (_run_job):176652 [wandb_run.py:_config_callback():1324] config_cb None None {'a': 8, 'b': 16, 'c': 256}
+2023-10-30 20:20:33,805 INFO    Thread-2 (_run_job):176652 [wandb_init.py:init():720] updated telemetry
+2023-10-30 20:20:33,810 INFO    Thread-2 (_run_job):176652 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2023-10-30 20:20:34,061 INFO    Thread-2 (_run_job):176652 [wandb_run.py:_on_init():2220] communicating current version
+2023-10-30 20:20:34,140 INFO    Thread-2 (_run_job):176652 [wandb_run.py:_on_init():2229] got version response 
+2023-10-30 20:20:34,140 INFO    Thread-2 (_run_job):176652 [wandb_init.py:init():804] starting run threads in backend
+2023-10-30 20:20:34,335 INFO    Thread-2 (_run_job):176652 [wandb_run.py:_console_start():2199] atexit reg
+2023-10-30 20:20:34,335 INFO    Thread-2 (_run_job):176652 [wandb_run.py:_redirect():2054] redirect: wrap_raw
+2023-10-30 20:20:34,335 INFO    Thread-2 (_run_job):176652 [wandb_run.py:_redirect():2119] Wrapping output streams.
+2023-10-30 20:20:34,335 INFO    Thread-2 (_run_job):176652 [wandb_run.py:_redirect():2144] Redirects installed.
+2023-10-30 20:20:34,335 INFO    Thread-2 (_run_job):176652 [wandb_init.py:init():845] run started, returning control to user process
+2023-10-30 20:21:37,426 INFO    Thread-2 (_run_job):176652 [wandb_run.py:_finish():1934] finishing run henrybass/Directions_BCI/xitb3eci
+2023-10-30 20:21:37,427 INFO    Thread-2 (_run_job):176652 [wandb_run.py:_atexit_cleanup():2168] got exitcode: 0
+2023-10-30 20:21:37,427 INFO    Thread-2 (_run_job):176652 [wandb_run.py:_restore():2151] restore
+2023-10-30 20:21:37,427 INFO    Thread-2 (_run_job):176652 [wandb_run.py:_restore():2157] restore done
+2023-10-30 20:21:40,893 INFO    Thread-2 (_run_job):176652 [wandb_run.py:_footer_history_summary_info():3599] rendering history
+2023-10-30 20:21:40,894 INFO    Thread-2 (_run_job):176652 [wandb_run.py:_footer_history_summary_info():3631] rendering summary
+2023-10-30 20:21:40,898 INFO    Thread-2 (_run_job):176652 [wandb_run.py:_footer_sync_info():3558] logging synced files

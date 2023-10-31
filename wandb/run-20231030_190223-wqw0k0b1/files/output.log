@@ -1,0 +1,133 @@
+
+creating training data
+[95125, 94125, 95375]
+[94125, 94125, 94125]
+length: 282375
+creating testing data
+[11750, 11750, 11750]
+[11750, 11750, 11750]
+length: 35250
+282375
+35250
+(282375, 16, 60)
+Epoch 1/10
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 20s 2ms/step - loss: 0.7276 - accuracy: 0.6454 - val_loss: 2.1712 - val_accuracy: 0.3919
+Epoch 2/10
+
+
+
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 24s 3ms/step - loss: 0.3639 - accuracy: 0.8477 - val_loss: 3.0946 - val_accuracy: 0.3685
+Epoch 3/10
+
+
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 22s 3ms/step - loss: 0.2414 - accuracy: 0.9042 - val_loss: 3.5226 - val_accuracy: 0.3734
+Epoch 4/10
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 18s 2ms/step - loss: 0.1798 - accuracy: 0.9306 - val_loss: 4.2470 - val_accuracy: 0.3690
+Epoch 5/10
+
+
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 23s 3ms/step - loss: 0.1515 - accuracy: 0.9435 - val_loss: 4.6345 - val_accuracy: 0.3510
+Epoch 6/10
+
+
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 22s 3ms/step - loss: 0.1280 - accuracy: 0.9526 - val_loss: 5.5328 - val_accuracy: 0.3701
+Epoch 7/10
+
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 20s 2ms/step - loss: 0.1121 - accuracy: 0.9593 - val_loss: 4.9219 - val_accuracy: 0.3613
+Epoch 8/10
+
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 20s 2ms/step - loss: 0.1015 - accuracy: 0.9635 - val_loss: 5.1852 - val_accuracy: 0.3542
+Epoch 9/10
+
+
+
+
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 25s 3ms/step - loss: 0.0903 - accuracy: 0.9678 - val_loss: 5.5581 - val_accuracy: 0.3548
+Epoch 10/10
+
+
+
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 23s 3ms/step - loss: 0.0833 - accuracy: 0.9708 - val_loss: 5.6292 - val_accuracy: 0.3607
+1102/1102 [==============================] - 2s 2ms/step - loss: 5.6292 - accuracy: 0.3607
+saved:
+new_models/36.07-acc-64x3-batch-norm-1698707178-loss-5.63.model

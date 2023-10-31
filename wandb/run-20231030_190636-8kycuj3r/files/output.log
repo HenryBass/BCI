@@ -1,0 +1,24 @@
+
+creating training data
+Traceback (most recent call last):
+  File "/home/henry/Documents/BCI/training.py", line 78, in <module>
+    traindata = create_data(starting_dir="data")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/Documents/BCI/training.py", line 43, in create_data
+    data = np.load(os.path.join(data_dir, item))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/numpy/lib/npyio.py", line 412, in load
+    magic = fid.read(N)
+            ^^^^^^^^^^^
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/henry/Documents/BCI/training.py", line 78, in <module>
+    traindata = create_data(starting_dir="data")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/Documents/BCI/training.py", line 43, in create_data
+    data = np.load(os.path.join(data_dir, item))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/numpy/lib/npyio.py", line 412, in load
+    magic = fid.read(N)
+            ^^^^^^^^^^^
+KeyboardInterrupt

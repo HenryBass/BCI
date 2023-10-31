@@ -1,0 +1,283 @@
+
+creating training data
+[95125, 94125, 95375]
+[94125, 94125, 94125]
+length: 282375
+creating testing data
+[11750, 11750, 11750]
+[11750, 11750, 11750]
+length: 35250
+282375
+35250
+(282375, 16, 60)
+Epoch 1/5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 71s 8ms/step - loss: 0.7632 - accuracy: 0.6226 - val_loss: 1.9731 - val_accuracy: 0.3408
+Epoch 2/5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 69s 8ms/step - loss: 0.3486 - accuracy: 0.8566 - val_loss: 4.0262 - val_accuracy: 0.3610
+Epoch 3/5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 70s 8ms/step - loss: 0.2163 - accuracy: 0.9166 - val_loss: 3.3517 - val_accuracy: 0.3993
+Epoch 4/5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 73s 8ms/step - loss: 0.1529 - accuracy: 0.9430 - val_loss: 3.1022 - val_accuracy: 0.3878
+Epoch 5/5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 78s 9ms/step - loss: 0.1232 - accuracy: 0.9554 - val_loss: 3.8864 - val_accuracy: 0.3844
+
+ 763/1102 [===================>..........] - ETA: 1s - loss: 3.9291 - accuracy: 0.3840
+Traceback (most recent call last):
+  File "/home/henry/Documents/BCI/training.py", line 135, in <module>
+    score = model.evaluate(test_X, test_y, batch_size=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/engine/training.py", line 2272, in evaluate
+    logs = test_function_runner.run_step(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/engine/training.py", line 4084, in run_step
+    self._callbacks.on_test_batch_end(end_step, logs)
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/callbacks.py", line 497, in on_test_batch_end
+    self._call_batch_hook(ModeKeys.TEST, "end", batch, logs=logs)
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/callbacks.py", line 322, in _call_batch_hook
+    self._call_batch_end_hook(mode, batch, logs)
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/callbacks.py", line 345, in _call_batch_end_hook
+    self._call_batch_hook_helper(hook_name, batch, logs)
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/callbacks.py", line 393, in _call_batch_hook_helper
+    hook(batch, logs)
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/callbacks.py", line 1097, in on_test_batch_end
+    self._batch_update_progbar(batch, logs)
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/callbacks.py", line 1169, in _batch_update_progbar
+    logs = tf_utils.sync_to_numpy_or_python_type(logs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/utils/tf_utils.py", line 694, in sync_to_numpy_or_python_type
+    return tf.nest.map_structure(_to_single_numpy_or_python_type, tensors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/util/nest.py", line 629, in map_structure
+    return nest_util.map_structure(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/util/nest_util.py", line 1168, in map_structure
+    return _tf_core_map_structure(func, *structure, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/util/nest_util.py", line 1208, in _tf_core_map_structure
+    [func(*x) for x in entries],
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/util/nest_util.py", line 1208, in <listcomp>
+    [func(*x) for x in entries],
+     ^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/utils/tf_utils.py", line 692, in _to_single_numpy_or_python_type
+    return t.item() if np.ndim(t) == 0 else t
+           ^^^^^^^^
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/henry/Documents/BCI/training.py", line 135, in <module>
+    score = model.evaluate(test_X, test_y, batch_size=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/engine/training.py", line 2272, in evaluate
+    logs = test_function_runner.run_step(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/engine/training.py", line 4084, in run_step
+    self._callbacks.on_test_batch_end(end_step, logs)
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/callbacks.py", line 497, in on_test_batch_end
+    self._call_batch_hook(ModeKeys.TEST, "end", batch, logs=logs)
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/callbacks.py", line 322, in _call_batch_hook
+    self._call_batch_end_hook(mode, batch, logs)
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/callbacks.py", line 345, in _call_batch_end_hook
+    self._call_batch_hook_helper(hook_name, batch, logs)
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/callbacks.py", line 393, in _call_batch_hook_helper
+    hook(batch, logs)
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/callbacks.py", line 1097, in on_test_batch_end
+    self._batch_update_progbar(batch, logs)
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/callbacks.py", line 1169, in _batch_update_progbar
+    logs = tf_utils.sync_to_numpy_or_python_type(logs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/utils/tf_utils.py", line 694, in sync_to_numpy_or_python_type
+    return tf.nest.map_structure(_to_single_numpy_or_python_type, tensors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/util/nest.py", line 629, in map_structure
+    return nest_util.map_structure(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/util/nest_util.py", line 1168, in map_structure
+    return _tf_core_map_structure(func, *structure, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/util/nest_util.py", line 1208, in _tf_core_map_structure
+    [func(*x) for x in entries],
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/util/nest_util.py", line 1208, in <listcomp>
+    [func(*x) for x in entries],
+     ^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/utils/tf_utils.py", line 692, in _to_single_numpy_or_python_type
+    return t.item() if np.ndim(t) == 0 else t
+           ^^^^^^^^
+KeyboardInterrupt

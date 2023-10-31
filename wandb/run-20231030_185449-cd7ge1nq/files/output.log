@@ -1,0 +1,26 @@
+
+creating training data
+[95125, 94125, 95375]
+[94125, 94125, 94125]
+length: 282375
+creating testing data
+[11750, 11750, 11750]
+[11750, 11750, 11750]
+length: 35250
+282375
+35250
+(282375, 16, 60)
+
+
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 23s 3ms/step - loss: 0.6835 - accuracy: 0.6755 - val_loss: 1.9061 - val_accuracy: 0.4068
+1102/1102 [==============================] - 1s 1ms/step - loss: 1.9061 - accuracy: 0.4068
+saved:
+new_models/40.68-acc-64x3-batch-norm-1698706526-loss-1.91.model

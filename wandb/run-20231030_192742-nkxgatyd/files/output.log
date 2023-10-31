@@ -1,0 +1,145 @@
+
+creating training data
+[95125, 94125, 95375]
+[94125, 94125, 94125]
+length: 282375
+creating testing data
+[11750, 11750, 11750]
+[11750, 11750, 11750]
+length: 35250
+282375
+35250
+(282375, 16, 60)
+Epoch 1/5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 42s 5ms/step - loss: 0.7936 - accuracy: 0.6069 - val_loss: 1.7616 - val_accuracy: 0.4186
+Epoch 2/5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 39s 4ms/step - loss: 0.3570 - accuracy: 0.8535 - val_loss: 2.3843 - val_accuracy: 0.4195
+Epoch 3/5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 35s 4ms/step - loss: 0.2084 - accuracy: 0.9190 - val_loss: 3.6204 - val_accuracy: 0.4096
+Epoch 4/5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5854/8825 [==================>...........] - ETA: 14s - loss: 0.1529 - accuracy: 0.9423
+Traceback (most recent call last):
+  File "/home/henry/Documents/BCI/training.py", line 136, in <module>
+    model.fit(train_X, train_y, batch_size=batch_size,
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/engine/training.py", line 1783, in fit
+    tmp_logs = self.train_function(iterator)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 831, in __call__
+    result = self._call(*args, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 867, in _call
+    return tracing_compilation.call_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compilation.py", line 132, in call_function
+    function = trace_function(
+               ^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compilation.py", line 181, in trace_function
+    _set_arg_keywords(concrete_function)
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compilation.py", line 359, in _set_arg_keywords
+    num_captures = len(graph.internal_captures + graph.deferred_internal_captures)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/framework/func_graph.py", line 869, in deferred_internal_captures
+    @property
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/henry/Documents/BCI/training.py", line 136, in <module>
+    model.fit(train_X, train_y, batch_size=batch_size,
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/engine/training.py", line 1783, in fit
+    tmp_logs = self.train_function(iterator)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 831, in __call__
+    result = self._call(*args, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 867, in _call
+    return tracing_compilation.call_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compilation.py", line 132, in call_function
+    function = trace_function(
+               ^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compilation.py", line 181, in trace_function
+    _set_arg_keywords(concrete_function)
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compilation.py", line 359, in _set_arg_keywords
+    num_captures = len(graph.internal_captures + graph.deferred_internal_captures)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/framework/func_graph.py", line 869, in deferred_internal_captures
+    @property
+KeyboardInterrupt

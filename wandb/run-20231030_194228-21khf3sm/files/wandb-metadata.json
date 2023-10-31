@@ -1,0 +1,120 @@
+{
+    "os": "Linux-6.5.5-100.fc37.x86_64-x86_64-with-glibc2.36",
+    "python": "3.11.5",
+    "heartbeatAt": "2023-10-30T23:42:29.409441",
+    "startedAt": "2023-10-30T23:42:28.981287",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/henry/Documents/BCI/training.py",
+    "codePathLocal": "training.py",
+    "codePath": "training.py",
+    "git": {
+        "remote": "https://github.com/Sentdex/BCI.git",
+        "commit": "e063dca2604554d6fd4d8afc2377075951abb6b6"
+    },
+    "email": "63601449+HenryBass@users.noreply.github.com",
+    "root": "/home/henry/Documents/BCI",
+    "host": "fedora",
+    "username": "henry",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 12,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2455.5266874999993,
+        "min": 400.0,
+        "max": 3850.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1097.034,
+            "min": 400.0,
+            "max": 4400.0
+        },
+        {
+            "current": 3205.267,
+            "min": 400.0,
+            "max": 4400.0
+        },
+        {
+            "current": 2952.539,
+            "min": 400.0,
+            "max": 4400.0
+        },
+        {
+            "current": 3280.651,
+            "min": 400.0,
+            "max": 4400.0
+        },
+        {
+            "current": 2504.124,
+            "min": 400.0,
+            "max": 4400.0
+        },
+        {
+            "current": 2965.176,
+            "min": 400.0,
+            "max": 4400.0
+        },
+        {
+            "current": 3287.295,
+            "min": 400.0,
+            "max": 4400.0
+        },
+        {
+            "current": 2705.14,
+            "min": 400.0,
+            "max": 4400.0
+        },
+        {
+            "current": 2504.729,
+            "min": 400.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2690.281,
+            "min": 400.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2251.273,
+            "min": 400.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2463.425,
+            "min": 400.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2450.09,
+            "min": 400.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2482.299,
+            "min": 400.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2493.518,
+            "min": 400.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2463.887,
+            "min": 400.0,
+            "max": 3300.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 231.298828125,
+            "used": 55.91554260253906
+        }
+    },
+    "memory": {
+        "total": 15.319034576416016
+    }
+}

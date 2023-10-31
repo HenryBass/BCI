@@ -1,0 +1,272 @@
+2023-10-30 20:48:04,063 INFO    StreamThr :187755 [internal.py:wandb_internal():86] W&B internal server running at pid: 187755, started at: 2023-10-30 20:48:04.062909
+2023-10-30 20:48:04,064 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: status
+2023-10-30 20:48:04,067 INFO    WriterThread:187755 [datastore.py:open_for_write():85] open: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/run-2vawjqp2.wandb
+2023-10-30 20:48:04,067 DEBUG   SenderThread:187755 [sender.py:send():380] send: header
+2023-10-30 20:48:04,074 DEBUG   SenderThread:187755 [sender.py:send():380] send: run
+2023-10-30 20:48:04,392 INFO    SenderThread:187755 [dir_watcher.py:__init__():211] watching files in: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files
+2023-10-30 20:48:04,392 INFO    SenderThread:187755 [sender.py:_start_run_threads():1122] run started: 2vawjqp2 with start time 1698713284.061647
+2023-10-30 20:48:04,397 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: check_version
+2023-10-30 20:48:04,397 DEBUG   SenderThread:187755 [sender.py:send_request():407] send_request: check_version
+2023-10-30 20:48:04,632 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: run_start
+2023-10-30 20:48:04,633 DEBUG   HandlerThread:187755 [system_info.py:__init__():32] System info init
+2023-10-30 20:48:04,633 DEBUG   HandlerThread:187755 [system_info.py:__init__():47] System info init done
+2023-10-30 20:48:04,633 INFO    HandlerThread:187755 [system_monitor.py:start():194] Starting system monitor
+2023-10-30 20:48:04,633 INFO    SystemMonitor:187755 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-10-30 20:48:04,633 INFO    HandlerThread:187755 [system_monitor.py:probe():214] Collecting system info
+2023-10-30 20:48:04,634 INFO    SystemMonitor:187755 [interfaces.py:start():190] Started cpu monitoring
+2023-10-30 20:48:04,634 INFO    SystemMonitor:187755 [interfaces.py:start():190] Started disk monitoring
+2023-10-30 20:48:04,634 INFO    SystemMonitor:187755 [interfaces.py:start():190] Started memory monitoring
+2023-10-30 20:48:04,635 INFO    SystemMonitor:187755 [interfaces.py:start():190] Started network monitoring
+2023-10-30 20:48:04,643 DEBUG   HandlerThread:187755 [system_info.py:probe():196] Probing system
+2023-10-30 20:48:04,647 DEBUG   HandlerThread:187755 [system_info.py:_probe_git():181] Probing git
+2023-10-30 20:48:04,652 DEBUG   HandlerThread:187755 [system_info.py:_probe_git():189] Probing git done
+2023-10-30 20:48:04,652 DEBUG   HandlerThread:187755 [system_info.py:probe():244] Probing system done
+2023-10-30 20:48:04,652 DEBUG   HandlerThread:187755 [system_monitor.py:probe():223] {'os': 'Linux-6.5.5-100.fc37.x86_64-x86_64-with-glibc2.36', 'python': '3.11.5', 'heartbeatAt': '2023-10-31T00:48:04.643493', 'startedAt': '2023-10-31T00:48:04.056171', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/henry/Documents/BCI/training.py', 'codePathLocal': 'training.py', 'codePath': 'training.py', 'git': {'remote': 'https://github.com/Sentdex/BCI.git', 'commit': 'e063dca2604554d6fd4d8afc2377075951abb6b6'}, 'email': '63601449+HenryBass@users.noreply.github.com', 'root': '/home/henry/Documents/BCI', 'host': 'fedora', 'username': 'henry', 'executable': '/usr/bin/python3', 'cpu_count': 12, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2765.0995625, 'min': 400.0, 'max': 3850.0}, 'cpu_freq_per_core': [{'current': 2794.791, 'min': 400.0, 'max': 4400.0}, {'current': 3317.552, 'min': 400.0, 'max': 4400.0}, {'current': 3500.0, 'min': 400.0, 'max': 4400.0}, {'current': 400.0, 'min': 400.0, 'max': 4400.0}, {'current': 2663.412, 'min': 400.0, 'max': 4400.0}, {'current': 2790.964, 'min': 400.0, 'max': 4400.0}, {'current': 3500.0, 'min': 400.0, 'max': 4400.0}, {'current': 3495.788, 'min': 400.0, 'max': 4400.0}, {'current': 3200.025, 'min': 400.0, 'max': 3300.0}, {'current': 3146.014, 'min': 400.0, 'max': 3300.0}, {'current': 3188.039, 'min': 400.0, 'max': 3300.0}, {'current': 400.0, 'min': 400.0, 'max': 3300.0}, {'current': 1465.286, 'min': 400.0, 'max': 3300.0}, {'current': 2079.473, 'min': 400.0, 'max': 3300.0}, {'current': 2842.629, 'min': 400.0, 'max': 3300.0}, {'current': 400.0, 'min': 400.0, 'max': 3300.0}], 'disk': {'/': {'total': 231.298828125, 'used': 56.0060920715332}}, 'memory': {'total': 15.319034576416016}}
+2023-10-30 20:48:04,652 INFO    HandlerThread:187755 [system_monitor.py:probe():224] Finished collecting system info
+2023-10-30 20:48:04,652 INFO    HandlerThread:187755 [system_monitor.py:probe():227] Publishing system info
+2023-10-30 20:48:04,652 DEBUG   HandlerThread:187755 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-10-30 20:48:04,653 DEBUG   HandlerThread:187755 [system_info.py:_save_pip():68] Saving pip packages done
+2023-10-30 20:48:04,653 DEBUG   HandlerThread:187755 [system_info.py:_save_code():90] Saving code
+2023-10-30 20:48:04,654 DEBUG   HandlerThread:187755 [system_info.py:_save_code():111] Saving code done
+2023-10-30 20:48:04,654 DEBUG   HandlerThread:187755 [system_info.py:_save_patches():128] Saving git patches
+2023-10-30 20:48:04,762 DEBUG   HandlerThread:187755 [system_info.py:_save_patches():170] Saving git patches done
+2023-10-30 20:48:04,763 INFO    HandlerThread:187755 [system_monitor.py:probe():229] Finished publishing system info
+2023-10-30 20:48:04,773 DEBUG   SenderThread:187755 [sender.py:send():380] send: files
+2023-10-30 20:48:04,773 INFO    SenderThread:187755 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-10-30 20:48:04,774 INFO    SenderThread:187755 [sender.py:_save_file():1378] saving file code/training.py with policy now
+2023-10-30 20:48:04,774 INFO    SenderThread:187755 [sender.py:_save_file():1378] saving file diff.patch with policy now
+2023-10-30 20:48:04,779 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-30 20:48:04,779 DEBUG   SenderThread:187755 [sender.py:send_request():407] send_request: stop_status
+2023-10-30 20:48:04,779 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-30 20:48:05,209 DEBUG   SenderThread:187755 [sender.py:send():380] send: telemetry
+2023-10-30 20:48:05,209 DEBUG   SenderThread:187755 [sender.py:send():380] send: config
+2023-10-30 20:48:05,394 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_created():271] file/dir created: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:48:05,394 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_created():271] file/dir created: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/requirements.txt
+2023-10-30 20:48:05,394 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_created():271] file/dir created: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/wandb-metadata.json
+2023-10-30 20:48:05,395 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_created():271] file/dir created: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/code/training.py
+2023-10-30 20:48:05,395 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_created():271] file/dir created: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/diff.patch
+2023-10-30 20:48:05,395 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_created():271] file/dir created: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/code
+2023-10-30 20:48:05,454 INFO    wandb-upload_0:187755 [upload_job.py:push():131] Uploaded file /tmp/tmpgoz9m_lvwandb/edmx48d2-wandb-metadata.json
+2023-10-30 20:48:05,487 INFO    wandb-upload_1:187755 [upload_job.py:push():131] Uploaded file /tmp/tmpgoz9m_lvwandb/0y76efak-code/training.py
+2023-10-30 20:48:05,489 INFO    wandb-upload_2:187755 [upload_job.py:push():131] Uploaded file /tmp/tmpgoz9m_lvwandb/ok8utate-diff.patch
+2023-10-30 20:48:07,394 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:48:09,212 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 20:48:13,396 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:48:14,726 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 20:48:15,397 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:48:15,754 DEBUG   SenderThread:187755 [sender.py:send():380] send: telemetry
+2023-10-30 20:48:15,754 DEBUG   SenderThread:187755 [sender.py:send():380] send: metric
+2023-10-30 20:48:15,755 DEBUG   SenderThread:187755 [sender.py:send():380] send: telemetry
+2023-10-30 20:48:15,755 DEBUG   SenderThread:187755 [sender.py:send():380] send: metric
+2023-10-30 20:48:15,755 WARNING SenderThread:187755 [sender.py:send_metric():1329] Seen metric with glob (shouldn't happen)
+2023-10-30 20:48:19,756 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 20:48:19,783 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-30 20:48:19,783 DEBUG   SenderThread:187755 [sender.py:send_request():407] send_request: stop_status
+2023-10-30 20:48:19,784 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-30 20:48:21,399 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:48:23,400 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:48:24,756 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 20:48:25,402 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:48:27,402 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:48:29,404 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:48:29,763 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 20:48:31,405 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:48:33,406 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:48:34,781 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-30 20:48:34,782 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-30 20:48:34,782 DEBUG   SenderThread:187755 [sender.py:send_request():407] send_request: stop_status
+2023-10-30 20:48:34,950 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 20:48:35,407 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:48:35,407 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/config.yaml
+2023-10-30 20:48:37,410 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:48:39,413 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:48:40,093 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 20:48:41,413 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:48:43,415 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:48:45,144 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 20:48:45,416 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:48:47,417 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:48:49,417 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:48:49,780 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-30 20:48:49,782 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-30 20:48:49,783 DEBUG   SenderThread:187755 [sender.py:send_request():407] send_request: stop_status
+2023-10-30 20:48:50,158 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 20:48:51,419 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:48:53,420 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:48:55,207 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 20:48:55,421 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:48:57,422 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:48:59,423 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:49:00,228 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 20:49:01,424 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:49:03,425 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:49:04,636 DEBUG   SystemMonitor:187755 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-10-30 20:49:04,637 DEBUG   SenderThread:187755 [sender.py:send():380] send: stats
+2023-10-30 20:49:04,781 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-30 20:49:04,781 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-30 20:49:04,781 DEBUG   SenderThread:187755 [sender.py:send_request():407] send_request: stop_status
+2023-10-30 20:49:05,255 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 20:49:05,428 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:49:07,429 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:49:09,430 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:49:10,266 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 20:49:11,431 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:49:13,433 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:49:15,270 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 20:49:15,434 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:49:17,437 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:49:19,440 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:49:19,781 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-30 20:49:19,783 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-30 20:49:19,783 DEBUG   SenderThread:187755 [sender.py:send_request():407] send_request: stop_status
+2023-10-30 20:49:20,290 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 20:49:21,442 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:49:23,443 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:49:24,950 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-30 20:49:24,952 DEBUG   SenderThread:187755 [sender.py:send():380] send: metric
+2023-10-30 20:49:24,953 DEBUG   SenderThread:187755 [sender.py:send():380] send: metric
+2023-10-30 20:49:24,953 DEBUG   SenderThread:187755 [sender.py:send():380] send: metric
+2023-10-30 20:49:24,953 DEBUG   SenderThread:187755 [sender.py:send():380] send: metric
+2023-10-30 20:49:24,953 DEBUG   SenderThread:187755 [sender.py:send():380] send: metric
+2023-10-30 20:49:24,953 DEBUG   SenderThread:187755 [sender.py:send():380] send: history
+2023-10-30 20:49:24,953 DEBUG   SenderThread:187755 [sender.py:send_request():407] send_request: summary_record
+2023-10-30 20:49:24,953 INFO    SenderThread:187755 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-30 20:49:25,444 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:49:25,444 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_created():271] file/dir created: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/wandb-summary.json
+2023-10-30 20:49:25,798 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 20:49:27,445 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:49:29,446 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:49:30,832 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 20:49:31,447 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:49:31,468 DEBUG   SenderThread:187755 [sender.py:send():380] send: telemetry
+2023-10-30 20:49:31,475 DEBUG   SenderThread:187755 [sender.py:send():380] send: exit
+2023-10-30 20:49:31,475 INFO    SenderThread:187755 [sender.py:send_exit():585] handling exit code: 0
+2023-10-30 20:49:31,475 INFO    SenderThread:187755 [sender.py:send_exit():587] handling runtime: 86
+2023-10-30 20:49:31,476 INFO    SenderThread:187755 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-30 20:49:31,476 INFO    SenderThread:187755 [sender.py:send_exit():593] send defer
+2023-10-30 20:49:31,476 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 20:49:31,476 INFO    HandlerThread:187755 [handler.py:handle_request_defer():172] handle defer: 0
+2023-10-30 20:49:31,477 DEBUG   SenderThread:187755 [sender.py:send_request():407] send_request: defer
+2023-10-30 20:49:31,477 INFO    SenderThread:187755 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-10-30 20:49:31,477 INFO    SenderThread:187755 [sender.py:transition_state():613] send defer: 1
+2023-10-30 20:49:31,477 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 20:49:31,477 INFO    HandlerThread:187755 [handler.py:handle_request_defer():172] handle defer: 1
+2023-10-30 20:49:31,477 DEBUG   SenderThread:187755 [sender.py:send_request():407] send_request: defer
+2023-10-30 20:49:31,477 INFO    SenderThread:187755 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-10-30 20:49:31,477 INFO    SenderThread:187755 [sender.py:transition_state():613] send defer: 2
+2023-10-30 20:49:31,477 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 20:49:31,477 INFO    HandlerThread:187755 [handler.py:handle_request_defer():172] handle defer: 2
+2023-10-30 20:49:31,477 INFO    HandlerThread:187755 [system_monitor.py:finish():203] Stopping system monitor
+2023-10-30 20:49:31,478 DEBUG   SystemMonitor:187755 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-10-30 20:49:31,478 DEBUG   SystemMonitor:187755 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-10-30 20:49:31,478 INFO    HandlerThread:187755 [interfaces.py:finish():202] Joined cpu monitor
+2023-10-30 20:49:31,480 INFO    HandlerThread:187755 [interfaces.py:finish():202] Joined disk monitor
+2023-10-30 20:49:31,480 INFO    HandlerThread:187755 [interfaces.py:finish():202] Joined memory monitor
+2023-10-30 20:49:31,480 INFO    HandlerThread:187755 [interfaces.py:finish():202] Joined network monitor
+2023-10-30 20:49:31,481 DEBUG   SenderThread:187755 [sender.py:send_request():407] send_request: defer
+2023-10-30 20:49:31,481 INFO    SenderThread:187755 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-10-30 20:49:31,481 INFO    SenderThread:187755 [sender.py:transition_state():613] send defer: 3
+2023-10-30 20:49:31,481 DEBUG   SenderThread:187755 [sender.py:send():380] send: stats
+2023-10-30 20:49:31,481 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 20:49:31,482 INFO    HandlerThread:187755 [handler.py:handle_request_defer():172] handle defer: 3
+2023-10-30 20:49:31,483 DEBUG   SenderThread:187755 [sender.py:send_request():407] send_request: defer
+2023-10-30 20:49:31,483 INFO    SenderThread:187755 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-10-30 20:49:31,483 INFO    SenderThread:187755 [sender.py:transition_state():613] send defer: 4
+2023-10-30 20:49:31,483 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 20:49:31,483 INFO    HandlerThread:187755 [handler.py:handle_request_defer():172] handle defer: 4
+2023-10-30 20:49:31,483 DEBUG   SenderThread:187755 [sender.py:send_request():407] send_request: defer
+2023-10-30 20:49:31,483 INFO    SenderThread:187755 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-10-30 20:49:31,483 INFO    SenderThread:187755 [sender.py:transition_state():613] send defer: 5
+2023-10-30 20:49:31,484 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 20:49:31,484 INFO    HandlerThread:187755 [handler.py:handle_request_defer():172] handle defer: 5
+2023-10-30 20:49:31,485 DEBUG   SenderThread:187755 [sender.py:send():380] send: summary
+2023-10-30 20:49:31,485 INFO    SenderThread:187755 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-30 20:49:31,486 DEBUG   SenderThread:187755 [sender.py:send_request():407] send_request: defer
+2023-10-30 20:49:31,486 INFO    SenderThread:187755 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-10-30 20:49:31,486 INFO    SenderThread:187755 [sender.py:transition_state():613] send defer: 6
+2023-10-30 20:49:31,486 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 20:49:31,486 INFO    HandlerThread:187755 [handler.py:handle_request_defer():172] handle defer: 6
+2023-10-30 20:49:31,487 DEBUG   SenderThread:187755 [sender.py:send_request():407] send_request: defer
+2023-10-30 20:49:31,487 INFO    SenderThread:187755 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-10-30 20:49:31,489 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 20:49:31,584 INFO    SenderThread:187755 [sender.py:transition_state():613] send defer: 7
+2023-10-30 20:49:31,585 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 20:49:31,585 INFO    HandlerThread:187755 [handler.py:handle_request_defer():172] handle defer: 7
+2023-10-30 20:49:31,585 DEBUG   SenderThread:187755 [sender.py:send_request():407] send_request: defer
+2023-10-30 20:49:31,585 INFO    SenderThread:187755 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-10-30 20:49:32,447 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/wandb-summary.json
+2023-10-30 20:49:32,448 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/config.yaml
+2023-10-30 20:49:32,475 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: poll_exit
+2023-10-30 20:49:33,278 INFO    SenderThread:187755 [sender.py:transition_state():613] send defer: 8
+2023-10-30 20:49:33,278 DEBUG   SenderThread:187755 [sender.py:send_request():407] send_request: poll_exit
+2023-10-30 20:49:33,279 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 20:49:33,279 INFO    HandlerThread:187755 [handler.py:handle_request_defer():172] handle defer: 8
+2023-10-30 20:49:33,280 DEBUG   SenderThread:187755 [sender.py:send_request():407] send_request: defer
+2023-10-30 20:49:33,280 INFO    SenderThread:187755 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-10-30 20:49:33,280 INFO    SenderThread:187755 [sender.py:transition_state():613] send defer: 9
+2023-10-30 20:49:33,281 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 20:49:33,281 INFO    HandlerThread:187755 [handler.py:handle_request_defer():172] handle defer: 9
+2023-10-30 20:49:33,282 DEBUG   SenderThread:187755 [sender.py:send_request():407] send_request: defer
+2023-10-30 20:49:33,282 INFO    SenderThread:187755 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-10-30 20:49:33,282 INFO    SenderThread:187755 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-10-30 20:49:33,449 INFO    Thread-12 :187755 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:49:33,450 INFO    SenderThread:187755 [dir_watcher.py:finish():388] scan: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files
+2023-10-30 20:49:33,451 INFO    SenderThread:187755 [dir_watcher.py:finish():402] scan save: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/config.yaml config.yaml
+2023-10-30 20:49:33,451 INFO    SenderThread:187755 [dir_watcher.py:finish():402] scan save: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/requirements.txt requirements.txt
+2023-10-30 20:49:33,454 INFO    SenderThread:187755 [dir_watcher.py:finish():402] scan save: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/diff.patch diff.patch
+2023-10-30 20:49:33,454 INFO    SenderThread:187755 [dir_watcher.py:finish():402] scan save: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/wandb-metadata.json wandb-metadata.json
+2023-10-30 20:49:33,454 INFO    SenderThread:187755 [dir_watcher.py:finish():402] scan save: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log output.log
+2023-10-30 20:49:33,454 INFO    SenderThread:187755 [dir_watcher.py:finish():402] scan save: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/wandb-summary.json wandb-summary.json
+2023-10-30 20:49:33,455 INFO    SenderThread:187755 [dir_watcher.py:finish():402] scan save: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/code/training.py code/training.py
+2023-10-30 20:49:33,455 INFO    SenderThread:187755 [sender.py:transition_state():613] send defer: 10
+2023-10-30 20:49:33,455 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 20:49:33,455 INFO    HandlerThread:187755 [handler.py:handle_request_defer():172] handle defer: 10
+2023-10-30 20:49:33,456 DEBUG   SenderThread:187755 [sender.py:send_request():407] send_request: defer
+2023-10-30 20:49:33,456 INFO    SenderThread:187755 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-10-30 20:49:33,458 INFO    SenderThread:187755 [file_pusher.py:finish():175] shutting down file pusher
+2023-10-30 20:49:33,477 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: poll_exit
+2023-10-30 20:49:33,477 DEBUG   SenderThread:187755 [sender.py:send_request():407] send_request: poll_exit
+2023-10-30 20:49:33,665 INFO    wandb-upload_2:187755 [upload_job.py:push():131] Uploaded file /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/requirements.txt
+2023-10-30 20:49:33,666 INFO    wandb-upload_0:187755 [upload_job.py:push():131] Uploaded file /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/config.yaml
+2023-10-30 20:49:33,672 INFO    wandb-upload_1:187755 [upload_job.py:push():131] Uploaded file /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/output.log
+2023-10-30 20:49:33,762 INFO    wandb-upload_3:187755 [upload_job.py:push():131] Uploaded file /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/files/wandb-summary.json
+2023-10-30 20:49:33,963 INFO    Thread-11 (_thread_body):187755 [sender.py:transition_state():613] send defer: 11
+2023-10-30 20:49:33,964 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 20:49:33,964 INFO    HandlerThread:187755 [handler.py:handle_request_defer():172] handle defer: 11
+2023-10-30 20:49:33,965 DEBUG   SenderThread:187755 [sender.py:send_request():407] send_request: defer
+2023-10-30 20:49:33,965 INFO    SenderThread:187755 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-10-30 20:49:33,965 INFO    SenderThread:187755 [file_pusher.py:join():181] waiting for file pusher
+2023-10-30 20:49:33,965 INFO    SenderThread:187755 [sender.py:transition_state():613] send defer: 12
+2023-10-30 20:49:33,965 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 20:49:33,965 INFO    HandlerThread:187755 [handler.py:handle_request_defer():172] handle defer: 12
+2023-10-30 20:49:33,966 DEBUG   SenderThread:187755 [sender.py:send_request():407] send_request: defer
+2023-10-30 20:49:33,966 INFO    SenderThread:187755 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-10-30 20:49:33,966 INFO    SenderThread:187755 [file_stream.py:finish():595] file stream finish called
+2023-10-30 20:49:34,052 INFO    SenderThread:187755 [file_stream.py:finish():599] file stream finish is done
+2023-10-30 20:49:34,052 INFO    SenderThread:187755 [sender.py:transition_state():613] send defer: 13
+2023-10-30 20:49:34,052 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 20:49:34,052 INFO    HandlerThread:187755 [handler.py:handle_request_defer():172] handle defer: 13
+2023-10-30 20:49:34,053 DEBUG   SenderThread:187755 [sender.py:send_request():407] send_request: defer
+2023-10-30 20:49:34,053 INFO    SenderThread:187755 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-10-30 20:49:34,053 INFO    SenderThread:187755 [sender.py:transition_state():613] send defer: 14
+2023-10-30 20:49:34,053 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 20:49:34,053 INFO    HandlerThread:187755 [handler.py:handle_request_defer():172] handle defer: 14
+2023-10-30 20:49:34,053 DEBUG   SenderThread:187755 [sender.py:send():380] send: final
+2023-10-30 20:49:34,054 DEBUG   SenderThread:187755 [sender.py:send():380] send: footer
+2023-10-30 20:49:34,054 DEBUG   SenderThread:187755 [sender.py:send_request():407] send_request: defer
+2023-10-30 20:49:34,054 INFO    SenderThread:187755 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-10-30 20:49:34,055 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-30 20:49:34,056 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: poll_exit
+2023-10-30 20:49:34,056 DEBUG   SenderThread:187755 [sender.py:send_request():407] send_request: poll_exit
+2023-10-30 20:49:34,058 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: server_info
+2023-10-30 20:49:34,058 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: get_summary
+2023-10-30 20:49:34,058 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: sampled_history
+2023-10-30 20:49:34,058 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: job_info
+2023-10-30 20:49:34,060 DEBUG   SenderThread:187755 [sender.py:send_request():407] send_request: server_info
+2023-10-30 20:49:34,114 DEBUG   SenderThread:187755 [sender.py:send_request():407] send_request: job_info
+2023-10-30 20:49:34,116 DEBUG   HandlerThread:187755 [handler.py:handle_request():146] handle_request: shutdown
+2023-10-30 20:49:34,116 INFO    HandlerThread:187755 [handler.py:finish():866] shutting down handler
+2023-10-30 20:49:35,059 INFO    WriterThread:187755 [datastore.py:close():294] close: /home/henry/Documents/BCI/wandb/run-20231030_204804-2vawjqp2/run-2vawjqp2.wandb
+2023-10-30 20:49:35,115 INFO    SenderThread:187755 [sender.py:finish():1534] shutting down sender
+2023-10-30 20:49:35,115 INFO    SenderThread:187755 [file_pusher.py:finish():175] shutting down file pusher
+2023-10-30 20:49:35,115 INFO    SenderThread:187755 [file_pusher.py:join():181] waiting for file pusher

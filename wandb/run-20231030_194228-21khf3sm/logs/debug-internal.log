@@ -1,0 +1,328 @@
+2023-10-30 19:42:28,996 INFO    StreamThr :165627 [internal.py:wandb_internal():86] W&B internal server running at pid: 165627, started at: 2023-10-30 19:42:28.994062
+2023-10-30 19:42:29,000 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status
+2023-10-30 19:42:29,004 INFO    WriterThread:165627 [datastore.py:open_for_write():85] open: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/run-21khf3sm.wandb
+2023-10-30 19:42:29,007 DEBUG   SenderThread:165627 [sender.py:send():380] send: header
+2023-10-30 19:42:29,015 DEBUG   SenderThread:165627 [sender.py:send():380] send: run
+2023-10-30 19:42:29,286 INFO    SenderThread:165627 [dir_watcher.py:__init__():211] watching files in: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files
+2023-10-30 19:42:29,286 INFO    SenderThread:165627 [sender.py:_start_run_threads():1122] run started: 21khf3sm with start time 1698709348.995866
+2023-10-30 19:42:29,292 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: check_version
+2023-10-30 19:42:29,293 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: check_version
+2023-10-30 19:42:29,394 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: run_start
+2023-10-30 19:42:29,395 DEBUG   HandlerThread:165627 [system_info.py:__init__():32] System info init
+2023-10-30 19:42:29,395 DEBUG   HandlerThread:165627 [system_info.py:__init__():47] System info init done
+2023-10-30 19:42:29,395 INFO    HandlerThread:165627 [system_monitor.py:start():194] Starting system monitor
+2023-10-30 19:42:29,395 INFO    SystemMonitor:165627 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-10-30 19:42:29,396 INFO    HandlerThread:165627 [system_monitor.py:probe():214] Collecting system info
+2023-10-30 19:42:29,396 INFO    SystemMonitor:165627 [interfaces.py:start():190] Started cpu monitoring
+2023-10-30 19:42:29,397 INFO    SystemMonitor:165627 [interfaces.py:start():190] Started disk monitoring
+2023-10-30 19:42:29,398 INFO    SystemMonitor:165627 [interfaces.py:start():190] Started memory monitoring
+2023-10-30 19:42:29,400 INFO    SystemMonitor:165627 [interfaces.py:start():190] Started network monitoring
+2023-10-30 19:42:29,409 DEBUG   HandlerThread:165627 [system_info.py:probe():196] Probing system
+2023-10-30 19:42:29,410 DEBUG   HandlerThread:165627 [system_info.py:_probe_git():181] Probing git
+2023-10-30 19:42:29,416 DEBUG   HandlerThread:165627 [system_info.py:_probe_git():189] Probing git done
+2023-10-30 19:42:29,416 DEBUG   HandlerThread:165627 [system_info.py:probe():244] Probing system done
+2023-10-30 19:42:29,416 DEBUG   HandlerThread:165627 [system_monitor.py:probe():223] {'os': 'Linux-6.5.5-100.fc37.x86_64-x86_64-with-glibc2.36', 'python': '3.11.5', 'heartbeatAt': '2023-10-30T23:42:29.409441', 'startedAt': '2023-10-30T23:42:28.981287', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/henry/Documents/BCI/training.py', 'codePathLocal': 'training.py', 'codePath': 'training.py', 'git': {'remote': 'https://github.com/Sentdex/BCI.git', 'commit': 'e063dca2604554d6fd4d8afc2377075951abb6b6'}, 'email': '63601449+HenryBass@users.noreply.github.com', 'root': '/home/henry/Documents/BCI', 'host': 'fedora', 'username': 'henry', 'executable': '/usr/bin/python3', 'cpu_count': 12, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2455.5266874999993, 'min': 400.0, 'max': 3850.0}, 'cpu_freq_per_core': [{'current': 1097.034, 'min': 400.0, 'max': 4400.0}, {'current': 3205.267, 'min': 400.0, 'max': 4400.0}, {'current': 2952.539, 'min': 400.0, 'max': 4400.0}, {'current': 3280.651, 'min': 400.0, 'max': 4400.0}, {'current': 2504.124, 'min': 400.0, 'max': 4400.0}, {'current': 2965.176, 'min': 400.0, 'max': 4400.0}, {'current': 3287.295, 'min': 400.0, 'max': 4400.0}, {'current': 2705.14, 'min': 400.0, 'max': 4400.0}, {'current': 2504.729, 'min': 400.0, 'max': 3300.0}, {'current': 2690.281, 'min': 400.0, 'max': 3300.0}, {'current': 2251.273, 'min': 400.0, 'max': 3300.0}, {'current': 2463.425, 'min': 400.0, 'max': 3300.0}, {'current': 2450.09, 'min': 400.0, 'max': 3300.0}, {'current': 2482.299, 'min': 400.0, 'max': 3300.0}, {'current': 2493.518, 'min': 400.0, 'max': 3300.0}, {'current': 2463.887, 'min': 400.0, 'max': 3300.0}], 'disk': {'/': {'total': 231.298828125, 'used': 55.91554260253906}}, 'memory': {'total': 15.319034576416016}}
+2023-10-30 19:42:29,416 INFO    HandlerThread:165627 [system_monitor.py:probe():224] Finished collecting system info
+2023-10-30 19:42:29,416 INFO    HandlerThread:165627 [system_monitor.py:probe():227] Publishing system info
+2023-10-30 19:42:29,416 DEBUG   HandlerThread:165627 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-10-30 19:42:29,417 DEBUG   HandlerThread:165627 [system_info.py:_save_pip():68] Saving pip packages done
+2023-10-30 19:42:29,417 DEBUG   HandlerThread:165627 [system_info.py:_save_code():90] Saving code
+2023-10-30 19:42:29,420 DEBUG   HandlerThread:165627 [system_info.py:_save_code():111] Saving code done
+2023-10-30 19:42:29,420 DEBUG   HandlerThread:165627 [system_info.py:_save_patches():128] Saving git patches
+2023-10-30 19:42:29,525 DEBUG   HandlerThread:165627 [system_info.py:_save_patches():170] Saving git patches done
+2023-10-30 19:42:29,525 INFO    HandlerThread:165627 [system_monitor.py:probe():229] Finished publishing system info
+2023-10-30 19:42:29,537 DEBUG   SenderThread:165627 [sender.py:send():380] send: files
+2023-10-30 19:42:29,537 INFO    SenderThread:165627 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-10-30 19:42:29,537 INFO    SenderThread:165627 [sender.py:_save_file():1378] saving file code/training.py with policy now
+2023-10-30 19:42:29,537 INFO    SenderThread:165627 [sender.py:_save_file():1378] saving file diff.patch with policy now
+2023-10-30 19:42:29,542 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-30 19:42:29,543 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-30 19:42:29,544 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: stop_status
+2023-10-30 19:42:29,771 DEBUG   SenderThread:165627 [sender.py:send():380] send: telemetry
+2023-10-30 19:42:29,851 INFO    wandb-upload_0:165627 [upload_job.py:push():131] Uploaded file /tmp/tmp2o6cxwwewandb/24aq995u-wandb-metadata.json
+2023-10-30 19:42:29,986 INFO    wandb-upload_2:165627 [upload_job.py:push():131] Uploaded file /tmp/tmp2o6cxwwewandb/oyu0i5d8-diff.patch
+2023-10-30 19:42:30,005 INFO    wandb-upload_1:165627 [upload_job.py:push():131] Uploaded file /tmp/tmp2o6cxwwewandb/2e0dskla-code/training.py
+2023-10-30 19:42:30,288 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_created():271] file/dir created: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/code/training.py
+2023-10-30 19:42:30,288 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_created():271] file/dir created: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/wandb-metadata.json
+2023-10-30 19:42:30,288 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_created():271] file/dir created: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/diff.patch
+2023-10-30 19:42:30,288 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_created():271] file/dir created: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:42:30,289 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_created():271] file/dir created: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/requirements.txt
+2023-10-30 19:42:30,289 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_created():271] file/dir created: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/code
+2023-10-30 19:42:32,287 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:42:34,773 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 19:42:40,039 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 19:42:40,290 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:42:42,291 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:42:44,061 DEBUG   SenderThread:165627 [sender.py:send():380] send: telemetry
+2023-10-30 19:42:44,061 DEBUG   SenderThread:165627 [sender.py:send():380] send: metric
+2023-10-30 19:42:44,062 DEBUG   SenderThread:165627 [sender.py:send():380] send: telemetry
+2023-10-30 19:42:44,062 DEBUG   SenderThread:165627 [sender.py:send():380] send: metric
+2023-10-30 19:42:44,062 WARNING SenderThread:165627 [sender.py:send_metric():1329] Seen metric with glob (shouldn't happen)
+2023-10-30 19:42:44,292 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:42:44,543 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-30 19:42:44,544 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-30 19:42:44,544 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: stop_status
+2023-10-30 19:42:45,705 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 19:42:50,706 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 19:42:54,301 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:42:55,720 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 19:42:56,302 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:42:58,304 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:42:59,544 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-30 19:42:59,545 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: stop_status
+2023-10-30 19:42:59,547 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-30 19:43:00,305 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:00,726 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 19:43:01,305 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/config.yaml
+2023-10-30 19:43:02,306 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:04,306 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:05,869 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 19:43:06,307 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:08,309 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:10,309 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:10,910 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 19:43:12,311 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:14,313 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:14,545 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-30 19:43:14,546 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: stop_status
+2023-10-30 19:43:14,554 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-30 19:43:15,916 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 19:43:16,313 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:18,314 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:20,315 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:20,952 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 19:43:22,318 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:24,319 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:25,989 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 19:43:26,322 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:28,324 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:29,401 DEBUG   SystemMonitor:165627 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-10-30 19:43:29,402 DEBUG   SenderThread:165627 [sender.py:send():380] send: stats
+2023-10-30 19:43:29,552 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-30 19:43:29,553 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-30 19:43:29,554 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: stop_status
+2023-10-30 19:43:30,325 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:30,991 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 19:43:32,326 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:34,327 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:36,027 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 19:43:36,327 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:38,328 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:40,329 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:41,047 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 19:43:42,330 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:44,331 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:44,544 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-30 19:43:44,544 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: stop_status
+2023-10-30 19:43:44,546 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-30 19:43:46,057 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 19:43:46,331 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:48,332 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:50,333 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:51,069 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 19:43:52,334 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:54,337 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:56,095 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 19:43:56,337 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:58,339 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:43:59,404 DEBUG   SenderThread:165627 [sender.py:send():380] send: stats
+2023-10-30 19:43:59,544 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-30 19:43:59,545 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-30 19:43:59,545 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: stop_status
+2023-10-30 19:44:00,340 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:44:01,121 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 19:44:02,341 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:44:04,342 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:44:06,151 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 19:44:06,345 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:44:08,345 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:44:10,347 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:44:11,156 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 19:44:12,348 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:44:14,350 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:44:14,544 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-30 19:44:14,545 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: stop_status
+2023-10-30 19:44:14,547 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-30 19:44:16,159 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 19:44:16,351 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:44:18,352 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:44:20,353 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:44:21,165 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 19:44:22,354 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:44:24,356 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:44:26,169 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 19:44:26,358 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:44:28,359 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:44:29,406 DEBUG   SenderThread:165627 [sender.py:send():380] send: stats
+2023-10-30 19:44:29,544 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-30 19:44:29,545 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: stop_status
+2023-10-30 19:44:29,547 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-30 19:44:30,360 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:44:31,177 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 19:44:32,361 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:44:34,362 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:44:36,206 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 19:44:36,362 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:44:38,364 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:44:40,365 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:44:42,131 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 19:44:44,545 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-30 19:44:44,546 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: stop_status
+2023-10-30 19:44:44,546 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-30 19:44:45,185 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-30 19:44:45,189 DEBUG   SenderThread:165627 [sender.py:send():380] send: metric
+2023-10-30 19:44:45,190 DEBUG   SenderThread:165627 [sender.py:send():380] send: metric
+2023-10-30 19:44:45,190 DEBUG   SenderThread:165627 [sender.py:send():380] send: metric
+2023-10-30 19:44:45,191 DEBUG   SenderThread:165627 [sender.py:send():380] send: metric
+2023-10-30 19:44:45,191 DEBUG   SenderThread:165627 [sender.py:send():380] send: metric
+2023-10-30 19:44:45,191 DEBUG   SenderThread:165627 [sender.py:send():380] send: history
+2023-10-30 19:44:45,191 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: summary_record
+2023-10-30 19:44:45,192 INFO    SenderThread:165627 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-30 19:44:45,367 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_created():271] file/dir created: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/wandb-summary.json
+2023-10-30 19:44:46,368 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:44:47,179 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 19:44:48,368 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:44:50,369 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:44:52,370 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:44:52,955 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 19:44:53,605 DEBUG   SenderThread:165627 [sender.py:send():380] send: exit
+2023-10-30 19:44:53,606 INFO    SenderThread:165627 [sender.py:send_exit():585] handling exit code: 0
+2023-10-30 19:44:53,606 INFO    SenderThread:165627 [sender.py:send_exit():587] handling runtime: 144
+2023-10-30 19:44:53,606 INFO    SenderThread:165627 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-30 19:44:53,606 INFO    SenderThread:165627 [sender.py:send_exit():593] send defer
+2023-10-30 19:44:53,606 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 19:44:53,606 INFO    HandlerThread:165627 [handler.py:handle_request_defer():172] handle defer: 0
+2023-10-30 19:44:53,607 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: defer
+2023-10-30 19:44:53,607 INFO    SenderThread:165627 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-10-30 19:44:53,607 INFO    SenderThread:165627 [sender.py:transition_state():613] send defer: 1
+2023-10-30 19:44:53,607 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 19:44:53,607 INFO    HandlerThread:165627 [handler.py:handle_request_defer():172] handle defer: 1
+2023-10-30 19:44:53,607 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: defer
+2023-10-30 19:44:53,607 INFO    SenderThread:165627 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-10-30 19:44:53,607 INFO    SenderThread:165627 [sender.py:transition_state():613] send defer: 2
+2023-10-30 19:44:53,608 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 19:44:53,608 INFO    HandlerThread:165627 [handler.py:handle_request_defer():172] handle defer: 2
+2023-10-30 19:44:53,608 INFO    HandlerThread:165627 [system_monitor.py:finish():203] Stopping system monitor
+2023-10-30 19:44:53,608 DEBUG   SystemMonitor:165627 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-10-30 19:44:53,608 DEBUG   SystemMonitor:165627 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-10-30 19:44:53,609 INFO    HandlerThread:165627 [interfaces.py:finish():202] Joined cpu monitor
+2023-10-30 19:44:53,609 INFO    HandlerThread:165627 [interfaces.py:finish():202] Joined disk monitor
+2023-10-30 19:44:53,609 INFO    HandlerThread:165627 [interfaces.py:finish():202] Joined memory monitor
+2023-10-30 19:44:53,609 INFO    HandlerThread:165627 [interfaces.py:finish():202] Joined network monitor
+2023-10-30 19:44:53,610 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: defer
+2023-10-30 19:44:53,610 INFO    SenderThread:165627 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-10-30 19:44:53,610 INFO    SenderThread:165627 [sender.py:transition_state():613] send defer: 3
+2023-10-30 19:44:53,610 DEBUG   SenderThread:165627 [sender.py:send():380] send: stats
+2023-10-30 19:44:53,610 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 19:44:53,610 INFO    HandlerThread:165627 [handler.py:handle_request_defer():172] handle defer: 3
+2023-10-30 19:44:53,611 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: defer
+2023-10-30 19:44:53,611 INFO    SenderThread:165627 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-10-30 19:44:53,611 INFO    SenderThread:165627 [sender.py:transition_state():613] send defer: 4
+2023-10-30 19:44:53,611 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 19:44:53,611 INFO    HandlerThread:165627 [handler.py:handle_request_defer():172] handle defer: 4
+2023-10-30 19:44:53,611 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: defer
+2023-10-30 19:44:53,611 INFO    SenderThread:165627 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-10-30 19:44:53,611 INFO    SenderThread:165627 [sender.py:transition_state():613] send defer: 5
+2023-10-30 19:44:53,611 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 19:44:53,612 INFO    HandlerThread:165627 [handler.py:handle_request_defer():172] handle defer: 5
+2023-10-30 19:44:53,612 DEBUG   SenderThread:165627 [sender.py:send():380] send: summary
+2023-10-30 19:44:53,612 INFO    SenderThread:165627 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-30 19:44:53,613 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: defer
+2023-10-30 19:44:53,613 INFO    SenderThread:165627 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-10-30 19:44:53,613 INFO    SenderThread:165627 [sender.py:transition_state():613] send defer: 6
+2023-10-30 19:44:53,613 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 19:44:53,613 INFO    HandlerThread:165627 [handler.py:handle_request_defer():172] handle defer: 6
+2023-10-30 19:44:53,613 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: defer
+2023-10-30 19:44:53,613 INFO    SenderThread:165627 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-10-30 19:44:53,616 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 19:44:53,746 INFO    SenderThread:165627 [sender.py:transition_state():613] send defer: 7
+2023-10-30 19:44:53,746 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 19:44:53,746 INFO    HandlerThread:165627 [handler.py:handle_request_defer():172] handle defer: 7
+2023-10-30 19:44:53,746 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: defer
+2023-10-30 19:44:53,746 INFO    SenderThread:165627 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-10-30 19:44:54,371 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:44:54,371 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/wandb-summary.json
+2023-10-30 19:44:54,372 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/config.yaml
+2023-10-30 19:44:54,605 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: poll_exit
+2023-10-30 19:44:55,883 INFO    SenderThread:165627 [sender.py:transition_state():613] send defer: 8
+2023-10-30 19:44:55,883 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: poll_exit
+2023-10-30 19:44:55,884 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 19:44:55,884 INFO    HandlerThread:165627 [handler.py:handle_request_defer():172] handle defer: 8
+2023-10-30 19:44:55,885 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: defer
+2023-10-30 19:44:55,885 INFO    SenderThread:165627 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-10-30 19:44:55,885 INFO    SenderThread:165627 [job_builder.py:build():281] Attempting to build job artifact
+2023-10-30 19:44:55,885 INFO    SenderThread:165627 [job_builder.py:_get_source_type():393] is repo sourced job
+2023-10-30 19:44:55,890 INFO    SenderThread:165627 [job_builder.py:build():369] adding wandb-job metadata file
+2023-10-30 19:44:55,893 INFO    SenderThread:165627 [sender.py:transition_state():613] send defer: 9
+2023-10-30 19:44:55,893 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 19:44:55,893 INFO    HandlerThread:165627 [handler.py:handle_request_defer():172] handle defer: 9
+2023-10-30 19:44:55,894 DEBUG   SenderThread:165627 [sender.py:send():380] send: artifact
+2023-10-30 19:44:56,372 INFO    Thread-12 :165627 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:44:56,498 INFO    wandb-upload_1:165627 [upload_job.py:push():86] Skipped uploading /home/henry/.local/share/wandb/artifacts/staging/tmpzpd9vryj
+2023-10-30 19:44:56,498 INFO    wandb-upload_2:165627 [upload_job.py:push():86] Skipped uploading /home/henry/.local/share/wandb/artifacts/staging/tmpylsl3diy
+2023-10-30 19:44:56,772 INFO    wandb-upload_0:165627 [upload_job.py:push():89] Uploaded file /home/henry/.local/share/wandb/artifacts/staging/tmp5hu999mm
+2023-10-30 19:44:57,475 INFO    SenderThread:165627 [sender.py:send_artifact():1456] sent artifact job-https___github.com_Sentdex_BCI.git_training.py - {'id': 'QXJ0aWZhY3Q6NjIyNTc3MDU2', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExMTI5NzY5Mw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjIyNTczOTI1', 'versionIndex': 11}}}
+2023-10-30 19:44:57,475 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: defer
+2023-10-30 19:44:57,475 INFO    SenderThread:165627 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-10-30 19:44:57,475 INFO    SenderThread:165627 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-10-30 19:44:58,373 INFO    SenderThread:165627 [dir_watcher.py:finish():388] scan: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files
+2023-10-30 19:44:58,373 INFO    SenderThread:165627 [dir_watcher.py:finish():402] scan save: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/config.yaml config.yaml
+2023-10-30 19:44:58,373 INFO    SenderThread:165627 [dir_watcher.py:finish():402] scan save: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/requirements.txt requirements.txt
+2023-10-30 19:44:58,373 INFO    SenderThread:165627 [dir_watcher.py:finish():402] scan save: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/diff.patch diff.patch
+2023-10-30 19:44:58,373 INFO    SenderThread:165627 [dir_watcher.py:finish():402] scan save: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/wandb-metadata.json wandb-metadata.json
+2023-10-30 19:44:58,373 INFO    SenderThread:165627 [dir_watcher.py:finish():402] scan save: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log output.log
+2023-10-30 19:44:58,373 INFO    SenderThread:165627 [dir_watcher.py:finish():402] scan save: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/wandb-summary.json wandb-summary.json
+2023-10-30 19:44:58,374 INFO    SenderThread:165627 [dir_watcher.py:finish():402] scan save: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/code/training.py code/training.py
+2023-10-30 19:44:58,374 INFO    SenderThread:165627 [sender.py:transition_state():613] send defer: 10
+2023-10-30 19:44:58,374 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 19:44:58,374 INFO    HandlerThread:165627 [handler.py:handle_request_defer():172] handle defer: 10
+2023-10-30 19:44:58,381 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: defer
+2023-10-30 19:44:58,381 INFO    SenderThread:165627 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-10-30 19:44:58,381 INFO    SenderThread:165627 [file_pusher.py:finish():175] shutting down file pusher
+2023-10-30 19:44:58,596 INFO    wandb-upload_1:165627 [upload_job.py:push():131] Uploaded file /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/config.yaml
+2023-10-30 19:44:58,596 INFO    wandb-upload_0:165627 [upload_job.py:push():131] Uploaded file /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/output.log
+2023-10-30 19:44:58,602 INFO    wandb-upload_3:165627 [upload_job.py:push():131] Uploaded file /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/wandb-summary.json
+2023-10-30 19:44:58,675 INFO    wandb-upload_2:165627 [upload_job.py:push():131] Uploaded file /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/files/requirements.txt
+2023-10-30 19:44:58,876 INFO    Thread-11 (_thread_body):165627 [sender.py:transition_state():613] send defer: 11
+2023-10-30 19:44:58,877 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 19:44:58,878 INFO    HandlerThread:165627 [handler.py:handle_request_defer():172] handle defer: 11
+2023-10-30 19:44:58,878 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: defer
+2023-10-30 19:44:58,878 INFO    SenderThread:165627 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-10-30 19:44:58,878 INFO    SenderThread:165627 [file_pusher.py:join():181] waiting for file pusher
+2023-10-30 19:44:58,878 INFO    SenderThread:165627 [sender.py:transition_state():613] send defer: 12
+2023-10-30 19:44:58,878 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 19:44:58,878 INFO    HandlerThread:165627 [handler.py:handle_request_defer():172] handle defer: 12
+2023-10-30 19:44:58,879 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: defer
+2023-10-30 19:44:58,879 INFO    SenderThread:165627 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-10-30 19:44:58,879 INFO    SenderThread:165627 [file_stream.py:finish():595] file stream finish called
+2023-10-30 19:44:58,963 INFO    SenderThread:165627 [file_stream.py:finish():599] file stream finish is done
+2023-10-30 19:44:58,963 INFO    SenderThread:165627 [sender.py:transition_state():613] send defer: 13
+2023-10-30 19:44:58,964 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 19:44:58,964 INFO    HandlerThread:165627 [handler.py:handle_request_defer():172] handle defer: 13
+2023-10-30 19:44:58,964 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: defer
+2023-10-30 19:44:58,964 INFO    SenderThread:165627 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-10-30 19:44:58,964 INFO    SenderThread:165627 [sender.py:transition_state():613] send defer: 14
+2023-10-30 19:44:58,965 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 19:44:58,965 INFO    HandlerThread:165627 [handler.py:handle_request_defer():172] handle defer: 14
+2023-10-30 19:44:58,965 DEBUG   SenderThread:165627 [sender.py:send():380] send: final
+2023-10-30 19:44:58,965 DEBUG   SenderThread:165627 [sender.py:send():380] send: footer
+2023-10-30 19:44:58,965 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: defer
+2023-10-30 19:44:58,965 INFO    SenderThread:165627 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-10-30 19:44:58,966 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: poll_exit
+2023-10-30 19:44:58,966 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: server_info
+2023-10-30 19:44:58,966 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: poll_exit
+2023-10-30 19:44:58,966 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: server_info
+2023-10-30 19:44:58,968 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: get_summary
+2023-10-30 19:44:58,969 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: sampled_history
+2023-10-30 19:44:58,969 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-30 19:44:58,970 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: job_info
+2023-10-30 19:44:59,025 DEBUG   SenderThread:165627 [sender.py:send_request():407] send_request: job_info
+2023-10-30 19:44:59,025 INFO    MainThread:165627 [wandb_run.py:_footer_history_summary_info():3599] rendering history
+2023-10-30 19:44:59,025 INFO    MainThread:165627 [wandb_run.py:_footer_history_summary_info():3631] rendering summary
+2023-10-30 19:44:59,026 INFO    MainThread:165627 [wandb_run.py:_footer_sync_info():3558] logging synced files
+2023-10-30 19:44:59,026 DEBUG   HandlerThread:165627 [handler.py:handle_request():146] handle_request: shutdown
+2023-10-30 19:44:59,026 INFO    HandlerThread:165627 [handler.py:finish():866] shutting down handler
+2023-10-30 19:44:59,970 INFO    WriterThread:165627 [datastore.py:close():294] close: /home/henry/Documents/BCI/wandb/run-20231030_194228-21khf3sm/run-21khf3sm.wandb
+2023-10-30 19:45:00,025 INFO    SenderThread:165627 [sender.py:finish():1534] shutting down sender
+2023-10-30 19:45:00,025 INFO    SenderThread:165627 [file_pusher.py:finish():175] shutting down file pusher
+2023-10-30 19:45:00,026 INFO    SenderThread:165627 [file_pusher.py:join():181] waiting for file pusher

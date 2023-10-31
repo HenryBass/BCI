@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/home/henry/Documents/BCI/training.py", line 163, in <module>
+    main()
+  File "/home/henry/Documents/BCI/training.py", line 27, in main
+    if wandb.config["a"] is not None:
+       ~~~~~~~~~~~~^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/wandb/sdk/wandb_config.py", line 130, in __getitem__
+    return self._items[key]
+           ~~~~~~~~~~~^^^^^
+KeyError: 'a'
+Traceback (most recent call last):
+  File "/home/henry/Documents/BCI/training.py", line 163, in <module>
+    main()
+  File "/home/henry/Documents/BCI/training.py", line 27, in main
+    if wandb.config["a"] is not None:
+       ~~~~~~~~~~~~^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/wandb/sdk/wandb_config.py", line 130, in __getitem__
+    return self._items[key]
+           ~~~~~~~~~~~^^^^^
+KeyError: 'a'

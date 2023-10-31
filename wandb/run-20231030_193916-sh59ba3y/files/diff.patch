@@ -1,0 +1,215 @@
+diff --git a/analysis.py b/analysis.py
+index 36da890..3848f1c 100644
+--- a/analysis.py
++++ b/analysis.py
+@@ -5,7 +5,7 @@ import pandas as pd
+ import matplotlib.pyplot as plt
+ 
+ 
+-MODEL_NAME = ""
++MODEL_NAME = "models/63.23-acc-loss-2.52.model"
+ 
+ CLIP = True  # if your model was trained with np.clip to clip  values
+ CLIP_VAL = 10  # if above, what was the value +/-
+@@ -13,7 +13,7 @@ CLIP_VAL = 10  # if above, what was the value +/-
+ model = tf.keras.models.load_model(MODEL_NAME)
+ 
+ VALDIR = 'validation_data'
+-ACTIONS = ['left','none','right']
++ACTIONS = ['left', 'none', 'right']
+ PRED_BATCH = 32
+ 
+ 
+@@ -24,18 +24,19 @@ def get_val_data(valdir, action, batch_size):
+ 
+     action_dir = os.path.join(valdir, action)
+     for session_file in os.listdir(action_dir):
+-        filepath = os.path.join(action_dir,session_file)
++        filepath = os.path.join(action_dir, session_file)
+         if CLIP:
+             data = np.clip(np.load(filepath), -CLIP_VAL, CLIP_VAL) / CLIP_VAL
+         else:
+-            data = np.load(filepath) 
++            data = np.load(filepath)
+ 
+-        preds = model.predict([data.reshape(-1, 16, 60)], batch_size=batch_size)
++        preds = model.predict([data.reshape(-1, 16, 60)],
++                              batch_size=batch_size)
+ 
+         for pred in preds:
+             argmax = np.argmax(pred)
+             argmax_dict[argmax] += 1
+-            for idx,value in enumerate(pred):
++            for idx, value in enumerate(pred):
+                 raw_pred_dict[idx] += value
+ 
+     argmax_pct_dict = {}
+@@ -66,18 +67,23 @@ def make_conf_mat(left, none, right):
+     print("__________")
+     print(action_dict)
+     for idx, i in enumerate(action_dict):
+-        print('tf',i)
++        print('tf', i)
+         for idx2, ii in enumerate(action_dict[i]):
+             print(i, ii)
+             print(action_dict[i][ii])
+-            ax.text(idx, idx2, f"{round(float(action_dict[i][ii]),2)}", va='center', ha='center')
++            ax.text(
++                idx, idx2, f"{round(float(action_dict[i][ii]),2)}", va='center', ha='center')
+     plt.title("Action Thought")
+     plt.ylabel("Predicted Action")
+     plt.show()
+ 
+ 
+-left_argmax_dict, left_raw_pred_dict, left_argmax_pct_dict = get_val_data(VALDIR, "left", PRED_BATCH)
+-none_argmax_dict, none_raw_pred_dict, none_argmax_pct_dict = get_val_data(VALDIR, "none", PRED_BATCH)
+-right_argmax_dict, right_raw_pred_dict, right_argmax_pct_dict = get_val_data(VALDIR, "right", PRED_BATCH)
++left_argmax_dict, left_raw_pred_dict, left_argmax_pct_dict = get_val_data(
++    VALDIR, "left", PRED_BATCH)
++none_argmax_dict, none_raw_pred_dict, none_argmax_pct_dict = get_val_data(
++    VALDIR, "none", PRED_BATCH)
++right_argmax_dict, right_raw_pred_dict, right_argmax_pct_dict = get_val_data(
++    VALDIR, "right", PRED_BATCH)
+ 
+-make_conf_mat(left_argmax_pct_dict, none_argmax_pct_dict, right_argmax_pct_dict)
++make_conf_mat(left_argmax_pct_dict, none_argmax_pct_dict,
++              right_argmax_pct_dict)
+diff --git a/training.py b/training.py
+index d3838c3..7c2d138 100644
+--- a/training.py
++++ b/training.py
+@@ -4,36 +4,59 @@ from tensorflow.keras.models import Sequential
+ from tensorflow.keras.layers import Dense, Dropout, Activation, Flatten
+ from tensorflow.keras.layers import Conv1D, MaxPooling1D, BatchNormalization
+ import os
+-import random
++import wandb
++from wandb.keras import WandbMetricsLogger
+ import time
+ 
+-
+ ACTIONS = ["left", "right", "none"]
+ reshape = (-1, 16, 60)
+ 
++# hpyerparameters
++epochs = 1
++batch_size = 32
++out_layers = [512, 256, 128]
++out_layers_activation = "relu"
++conv_activation = "gelu"
++noise = 0
++
++wandb.init(
++    project="Directions_BCI",
++
++    config={
++        "epochs": epochs,
++        "batch_size": batch_size,
++        "out_layers": out_layers,
++        "out_layers_activation": "relu",
++        "noise": noise,
++    }
++)
++
++
+ def create_data(starting_dir="data"):
+     training_data = {}
+     for action in ACTIONS:
+         if action not in training_data:
+             training_data[action] = []
+ 
+-        data_dir = os.path.join(starting_dir,action)
++        data_dir = os.path.join(starting_dir, action)
+         for item in os.listdir(data_dir):
+-            #print(action, item)
++            # print(action, item)
+             data = np.load(os.path.join(data_dir, item))
+             for item in data:
+-                training_data[action].append(item)
++                training_data[action].append(
++                    item + np.random.normal(0, noise, item.shape))
+ 
+     lengths = [len(training_data[action]) for action in ACTIONS]
+     print(lengths)
+ 
+     for action in ACTIONS:
+-        np.random.shuffle(training_data[action])  # note that regular shuffle is GOOF af
++        # note that regular shuffle is GOOF af
++        np.random.shuffle(training_data[action])
+         training_data[action] = training_data[action][:min(lengths)]
+ 
+     lengths = [len(training_data[action]) for action in ACTIONS]
+     print(lengths)
+-    # creating X, y 
++    # creating X, y
+     combined_data = []
+     for action in ACTIONS:
+         for data in training_data[action]:
+@@ -42,14 +65,13 @@ def create_data(starting_dir="data"):
+                 combined_data.append([data, [1, 0, 0]])
+ 
+             elif action == "right":
+-                #np.append(combined_data, np.array([data, [1, 0]]))
+                 combined_data.append([data, [0, 0, 1]])
+ 
+             elif action == "none":
+                 combined_data.append([data, [0, 1, 0]])
+ 
+     np.random.shuffle(combined_data)
+-    print("length:",len(combined_data))
++    print("length:", len(combined_data))
+     return combined_data
+ 
+ 
+@@ -83,19 +105,27 @@ test_y = np.array(test_y)
+ model = Sequential()
+ 
+ model.add(Conv1D(64, (3), input_shape=train_X.shape[1:]))
+-model.add(Activation('relu'))
++model.add(Activation(conv_activation))
++
++model.add(Conv1D(128, (2)))
++model.add(Activation(conv_activation))
++
++model.add(Conv1D(128, (2)))
++model.add(Activation(conv_activation))
+ 
+ model.add(Conv1D(64, (2)))
+-model.add(Activation('relu'))
++model.add(Activation(conv_activation))
+ model.add(MaxPooling1D(pool_size=(2)))
+ 
+ model.add(Conv1D(64, (2)))
+-model.add(Activation('relu'))
++model.add(Activation(conv_activation))
+ model.add(MaxPooling1D(pool_size=(2)))
+ 
+ model.add(Flatten())
+ 
+-model.add(Dense(512))
++for layer in out_layers:
++    model.add(Dense(layer))
++    model.add(Activation(out_layers_activation))
+ 
+ model.add(Dense(3))
+ model.add(Activation('softmax'))
+@@ -104,13 +134,11 @@ model.compile(loss='categorical_crossentropy',
+               optimizer='adam',
+               metrics=['accuracy'])
+ 
+-epochs = 10
+-batch_size = 32
+-for epoch in range(epochs):
+-    model.fit(train_X, train_y, batch_size=batch_size, epochs=1, validation_data=(test_X, test_y))
+-    score = model.evaluate(test_X, test_y, batch_size=batch_size)
+-    #print(score)
+-    MODEL_NAME = f"new_models/{round(score[1]*100,2)}-acc-64x3-batch-norm-{epoch}epoch-{int(time.time())}-loss-{round(score[0],2)}.model"
+-    model.save(MODEL_NAME)
++model.fit(train_X, train_y, batch_size=batch_size,
++          epochs=epochs, validation_data=(test_X, test_y), callbacks=[WandbMetricsLogger()])
++score = model.evaluate(test_X, test_y, batch_size=batch_size)
++# print(score)
++MODEL_NAME = f"new_models/{round(score[1]*100,2)}-acc-64x3-batch-norm-{int(time.time())}-loss-{round(score[0],2)}.model"
++model.save(MODEL_NAME)
+ print("saved:")
+ print(MODEL_NAME)

@@ -1,0 +1,359 @@
+
+creating training data
+[95125, 94125, 95375]
+[94125, 94125, 94125]
+length: 282375
+creating testing data
+[11750, 11750, 11750]
+[11750, 11750, 11750]
+length: 35250
+282375
+35250
+(282375, 16, 60)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 47s 5ms/step - loss: 0.9360 - accuracy: 0.5234 - val_loss: 1.3074 - val_accuracy: 0.4207
+
+1102/1102 [==============================] - 3s 3ms/step - loss: 1.3074 - accuracy: 0.4207
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 46s 5ms/step - loss: 0.6593 - accuracy: 0.7039 - val_loss: 1.5295 - val_accuracy: 0.4238
+
+1102/1102 [==============================] - 3s 3ms/step - loss: 1.5295 - accuracy: 0.4238
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 43s 5ms/step - loss: 0.5041 - accuracy: 0.7848 - val_loss: 2.0133 - val_accuracy: 0.4002
+
+
+1102/1102 [==============================] - 3s 2ms/step - loss: 2.0133 - accuracy: 0.4002
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 48s 5ms/step - loss: 0.4418 - accuracy: 0.8145 - val_loss: 2.2809 - val_accuracy: 0.3955
+
+
+1102/1102 [==============================] - 3s 3ms/step - loss: 2.2809 - accuracy: 0.3955
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 46s 5ms/step - loss: 0.3544 - accuracy: 0.8557 - val_loss: 2.5990 - val_accuracy: 0.3983
+
+1102/1102 [==============================] - 3s 2ms/step - loss: 2.5990 - accuracy: 0.3983
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 46s 5ms/step - loss: 0.3135 - accuracy: 0.8738 - val_loss: 3.2772 - val_accuracy: 0.3753
+
+1102/1102 [==============================] - 3s 3ms/step - loss: 3.2772 - accuracy: 0.3753
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 51s 6ms/step - loss: 0.3079 - accuracy: 0.8761 - val_loss: 3.3860 - val_accuracy: 0.3725
+
+
+1102/1102 [==============================] - 3s 3ms/step - loss: 3.3860 - accuracy: 0.3725
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 46s 5ms/step - loss: 0.2552 - accuracy: 0.8993 - val_loss: 4.4041 - val_accuracy: 0.3712
+
+1102/1102 [==============================] - 3s 2ms/step - loss: 4.4041 - accuracy: 0.3712
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 45s 5ms/step - loss: 0.2381 - accuracy: 0.9071 - val_loss: 4.3446 - val_accuracy: 0.3933
+
+
+1102/1102 [==============================] - 4s 3ms/step - loss: 4.3446 - accuracy: 0.3933
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8397/8825 [===========================>..] - ETA: 2s - loss: 0.2190 - accuracy: 0.9144
+Traceback (most recent call last):
+  File "/home/henry/Documents/BCI/training.py", line 120, in <module>
+    batch_size = 32
+        ^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/engine/training.py", line 1789, in fit
+    callbacks.on_train_batch_end(end_step, logs)
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/callbacks.py", line 475, in on_train_batch_end
+    self._call_batch_hook(ModeKeys.TRAIN, "end", batch, logs=logs)
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/callbacks.py", line 322, in _call_batch_hook
+    self._call_batch_end_hook(mode, batch, logs)
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/callbacks.py", line 345, in _call_batch_end_hook
+    self._call_batch_hook_helper(hook_name, batch, logs)
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/callbacks.py", line 393, in _call_batch_hook_helper
+    hook(batch, logs)
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/callbacks.py", line 1093, in on_train_batch_end
+    self._batch_update_progbar(batch, logs)
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/callbacks.py", line 1170, in _batch_update_progbar
+    self.progbar.update(self.seen, list(logs.items()), finalize=False)
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/utils/generic_utils.py", line 296, in update
+    io_utils.print_msg(message, line_break=False)
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/utils/io_utils.py", line 80, in print_msg
+    sys.stdout.write(message)
+  File "/home/henry/.local/lib/python3.11/site-packages/wandb/sdk/lib/redirect.py", line 643, in write
+    cb(data)
+  File "/home/henry/.local/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2123, in <lambda>
+    lambda data: self._console_raw_callback("stdout", data),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 370, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 1465, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/henry/.local/lib/python3.11/site-packages/wandb/sdk/interface/interface.py", line 617, in publish_output_raw
+    o.timestamp.GetCurrentTime()
+    ^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/google/protobuf/internal/python_message.py", line 750, in getter
+    field_value = field._default_constructor(self)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/google/protobuf/internal/python_message.py", line 454, in MakeSubMessageDefault
+    result = message_type._concrete_class()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/google/protobuf/internal/python_message.py", line 514, in init
+    self._listener_for_children = _Listener(self)
+                                  ^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/henry/Documents/BCI/training.py", line 120, in <module>
+    batch_size = 32
+        ^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/engine/training.py", line 1789, in fit
+    callbacks.on_train_batch_end(end_step, logs)
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/callbacks.py", line 475, in on_train_batch_end
+    self._call_batch_hook(ModeKeys.TRAIN, "end", batch, logs=logs)
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/callbacks.py", line 322, in _call_batch_hook
+    self._call_batch_end_hook(mode, batch, logs)
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/callbacks.py", line 345, in _call_batch_end_hook
+    self._call_batch_hook_helper(hook_name, batch, logs)
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/callbacks.py", line 393, in _call_batch_hook_helper
+    hook(batch, logs)
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/callbacks.py", line 1093, in on_train_batch_end
+    self._batch_update_progbar(batch, logs)
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/callbacks.py", line 1170, in _batch_update_progbar
+    self.progbar.update(self.seen, list(logs.items()), finalize=False)
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/utils/generic_utils.py", line 296, in update
+    io_utils.print_msg(message, line_break=False)
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/utils/io_utils.py", line 80, in print_msg
+    sys.stdout.write(message)
+  File "/home/henry/.local/lib/python3.11/site-packages/wandb/sdk/lib/redirect.py", line 643, in write
+    cb(data)
+  File "/home/henry/.local/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2123, in <lambda>
+    lambda data: self._console_raw_callback("stdout", data),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 370, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 1465, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/henry/.local/lib/python3.11/site-packages/wandb/sdk/interface/interface.py", line 617, in publish_output_raw
+    o.timestamp.GetCurrentTime()
+    ^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/google/protobuf/internal/python_message.py", line 750, in getter
+    field_value = field._default_constructor(self)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/google/protobuf/internal/python_message.py", line 454, in MakeSubMessageDefault
+    result = message_type._concrete_class()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/google/protobuf/internal/python_message.py", line 514, in init
+    self._listener_for_children = _Listener(self)
+                                  ^^^^^^^^^^^^^^^
+KeyboardInterrupt

@@ -1,0 +1,13 @@
+
+creating training data
+[95125, 94125, 95375]
+[94125, 94125, 94125]
+length: 282375
+creating testing data
+[11750, 11750, 11750]
+[11750, 11750, 11750]
+length: 35250
+282375
+35250
+(282375, 16, 60)
+[34m[1mwandb[39m[22m: Ctrl + C detected. Stopping sweep.

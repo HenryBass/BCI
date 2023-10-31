@@ -1,0 +1,152 @@
+
+creating training data
+[95125, 94125, 95375]
+[94125, 94125, 94125]
+length: 282375
+creating testing data
+[11750, 11750, 11750]
+[11750, 11750, 11750]
+length: 35250
+282375
+35250
+(282375, 16, 60)
+Epoch 1/5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 54s 6ms/step - loss: 0.7739 - accuracy: 0.6104 - val_loss: 1.7564 - val_accuracy: 0.4209
+Epoch 2/5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8825/8825 [==============================] - 54s 6ms/step - loss: 0.3705 - accuracy: 0.8476 - val_loss: 2.3101 - val_accuracy: 0.4073
+Epoch 3/5
+
+
+
+
+
+
+
+
+
+
+
+4121/8825 [=============>................] - ETA: 25s - loss: 0.2362 - accuracy: 0.9075
+Traceback (most recent call last):
+  File "/home/henry/Documents/BCI/training.py", line 136, in <module>
+    model.fit(train_X, train_y, batch_size=batch_size,
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/engine/training.py", line 1783, in fit
+    tmp_logs = self.train_function(iterator)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 831, in __call__
+    result = self._call(*args, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 867, in _call
+    return tracing_compilation.call_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compilation.py", line 139, in call_function
+    return function._call_flat(  # pylint: disable=protected-access
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/eager/polymorphic_function/concrete_function.py", line 1264, in _call_flat
+    return self._inference_function.flat_call(args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/eager/polymorphic_function/atomic_function.py", line 217, in flat_call
+    flat_outputs = self(*args)
+                   ^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/eager/polymorphic_function/atomic_function.py", line 252, in __call__
+    outputs = self._bound_context.call_function(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/eager/context.py", line 1479, in call_function
+    outputs = execute.execute(
+              ^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/eager/execute.py", line 60, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/henry/Documents/BCI/training.py", line 136, in <module>
+    model.fit(train_X, train_y, batch_size=batch_size,
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/keras/src/engine/training.py", line 1783, in fit
+    tmp_logs = self.train_function(iterator)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 831, in __call__
+    result = self._call(*args, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 867, in _call
+    return tracing_compilation.call_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compilation.py", line 139, in call_function
+    return function._call_flat(  # pylint: disable=protected-access
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/eager/polymorphic_function/concrete_function.py", line 1264, in _call_flat
+    return self._inference_function.flat_call(args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/eager/polymorphic_function/atomic_function.py", line 217, in flat_call
+    flat_outputs = self(*args)
+                   ^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/eager/polymorphic_function/atomic_function.py", line 252, in __call__
+    outputs = self._bound_context.call_function(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/eager/context.py", line 1479, in call_function
+    outputs = execute.execute(
+              ^^^^^^^^^^^^^^^^
+  File "/home/henry/.local/lib/python3.11/site-packages/tensorflow/python/eager/execute.py", line 60, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

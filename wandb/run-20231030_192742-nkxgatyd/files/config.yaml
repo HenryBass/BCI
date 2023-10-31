@@ -1,0 +1,73 @@
+wandb_version: 1
+
+epochs:
+  desc: null
+  value: 5
+batch_size:
+  desc: null
+  value: 32
+out_layers:
+  desc: null
+  value:
+  - 16
+  - 16
+  - 16
+out_layers_activation:
+  desc: null
+  value: relu
+noise:
+  desc: null
+  value: 0
+_wandb:
+  desc: null
+  value:
+    code_path: code/training.py
+    python_version: 3.11.5
+    cli_version: 0.15.12
+    framework: keras
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1698708462.462036
+    t:
+      1:
+      - 2
+      - 3
+      - 55
+      2:
+      - 2
+      - 3
+      - 55
+      3:
+      - 7
+      - 16
+      - 23
+      - 38
+      4: 3.11.5
+      5: 0.15.12
+      8:
+      - 5
+      13: linux-x86_64
+    m:
+    - 1: epoch/epoch
+      6:
+      - 3
+    - 1: epoch/loss
+      5: 1
+      6:
+      - 1
+    - 1: epoch/accuracy
+      5: 1
+      6:
+      - 1
+    - 1: epoch/val_loss
+      5: 1
+      6:
+      - 1
+    - 1: epoch/val_accuracy
+      5: 1
+      6:
+      - 1
+    - 1: epoch/learning_rate
+      5: 1
+      6:
+      - 1

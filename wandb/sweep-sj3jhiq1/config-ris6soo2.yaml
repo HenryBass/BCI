@@ -1,0 +1,8 @@
+wandb_version: 1
+
+a:
+  value: 1024
+b:
+  value: 1024
+c:
+  value: 32

@@ -1,0 +1,49 @@
+
+creating training data
+[95125, 94125, 95375]
+[94125, 94125, 94125]
+length: 56475
+creating testing data
+[11750, 11750, 11750]
+[11750, 11750, 11750]
+length: 7050
+56475
+7050
+(56475, 16, 60)
+Epoch 1/5
+
+
+
+
+
+1765/1765 [==============================] - 13s 7ms/step - loss: 1.0331 - accuracy: 0.4351 - val_loss: 1.1123 - val_accuracy: 0.4045
+Epoch 2/5
+
+
+
+
+1765/1765 [==============================] - 11s 6ms/step - loss: 0.8743 - accuracy: 0.5429 - val_loss: 1.2826 - val_accuracy: 0.3820
+Epoch 3/5
+
+
+
+
+
+1765/1765 [==============================] - 12s 7ms/step - loss: 0.7065 - accuracy: 0.6651 - val_loss: 1.4912 - val_accuracy: 0.4163
+Epoch 4/5
+
+
+
+
+
+1765/1765 [==============================] - 12s 7ms/step - loss: 0.5749 - accuracy: 0.7405 - val_loss: 1.6659 - val_accuracy: 0.3956
+Epoch 5/5
+
+
+
+
+
+1765/1765 [==============================] - 12s 7ms/step - loss: 0.4708 - accuracy: 0.8003 - val_loss: 1.8493 - val_accuracy: 0.3864
+221/221 [==============================] - 1s 3ms/step - loss: 1.8493 - accuracy: 0.3864
+saved:
+new_models/38.64-acc-64x3-batch-norm-1698715305-loss-1.85.model
